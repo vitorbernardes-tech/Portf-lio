@@ -100,12 +100,13 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 80px;
     z-index: 1000;
     background: linear-gradient(90deg, #000000 0%, #0a0a0a 100%);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 0 50px;
     border-bottom: 2px solid #ff4444;
     box-shadow: 0 4px 20px rgba(255, 68, 68, 0.1);
     backdrop-filter: blur(10px);
@@ -492,6 +493,13 @@ body {
     font-family: inherit;
     font-size: 1em;
     transition: all 0.3s ease;
+}
+
+.contact-form textarea {
+    min-height: 180px;
+    max-height: 180px;
+    height: 180px;
+    resize: none;
 }
 
 .contact-form input::placeholder,
